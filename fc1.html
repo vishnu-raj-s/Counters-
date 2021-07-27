@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="fc1.css">
+</head>
+
+<body>
+    <div class="main">
+        <h1>A SIMPLE COUNTER!</h1>
+        <h1>COUNT</h1>
+        <h2 id="count">0</h2>
+        <div class="cont">
+            
+            <button id="btn_incree" onclick="increement()">INCREEMENT</button>
+            <button id="btn_dec" onclick="decreement()">DECREEMENT</button>
+            <button type="reset" id="reset_btn" onclick="reset()">RESET</button>
+            <button id="save_btn" onclick="save()">SAVE</button>
+        </div>
+    </div>
+    <script>
+        console.log("log details!");
+         let count = 0;
+         function increement() {
+                
+                document.getElementById('count').innerText = count+1 ;
+                count ++;    
+         }
+          function decreement() {
+                
+                document.getElementById('count').innerText = count-1 ;
+                count --;    
+         }
+         function reset(){
+             let s = document.getElementById("count");
+             s.innerText = 0;
+             count = 0;
+         }
+         function save(){
+            let saved_number = count;
+            alert("the saved value is "+ (saved_number));
+            console.log("The saved value is "+ (saved_number))
+         }
+         
+        // // document.getElementById('count').innerText = 5;
+        // function countdown(n) {
+            // for (let i = n; i >0 ; i--) {
+                // 
+
+            // }
+        // }
+        // countdown(5);
+
+    </script>
+</body>
+
+</html>

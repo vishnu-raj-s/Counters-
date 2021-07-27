@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <h1>TIMER</h1>
+        <div class="main2">
+
+           <h2 id="he">0</h2> 
+            <div class="btn">
+                <button id="plus" onclick="increement()">+</button>
+                <button id="minus" onclick="dec()">-</button>
+            </div>
+        </div>
+    </div>
+    <SCript>
+        let s = 0
+        function increement(){
+            document.getElementById('he').innerText = s;
+            s++;
+        }
+        function dec(){
+            document.getElementById('he').innerText = s;
+            s--;
+        }
+    </SCript>
+</body>
+</html>

@@ -1,0 +1,54 @@
+body{
+    box-sizing: border-box;
+    background-color: grey;
+}
+.main{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+h1{
+    font-size: 50px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+h2{
+    font-size: 50px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+.cont{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: auto;
+    align-items: center;
+}
+button{
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    font-weight: bold;
+    width: 200px;
+    margin-bottom: 5px ;
+    border-radius: 5px;
+    cursor: s;
+    
+}
+#btn_incree{
+    background-color: red;
+    
+    
+}
+#btn_dec{
+    background-color: royalblue;
+}
+#reset_btn{
+    background-color: tomato;
+
+}
+#save_btn{
+    background-color: green;
+}
